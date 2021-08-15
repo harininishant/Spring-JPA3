@@ -1,0 +1,17 @@
+spring:
+  h2:
+    console:
+      enabled : true
+  datasource:
+    url: jdbc:h2:./appdb
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  show-sql: true
+#  spring:
+#    jpa:
+#      properties:
+#        hibernate:
+#          enable_lazy_load_no_trans: true
