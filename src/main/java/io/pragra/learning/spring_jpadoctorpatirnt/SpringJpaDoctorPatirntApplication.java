@@ -6,12 +6,14 @@ import io.pragra.learning.spring_jpadoctorpatirnt.service.AppointmentService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
 
 import java.time.Duration;
 import java.time.Instant;
 
 @SpringBootApplication
+@EnableCaching
 public class SpringJpaDoctorPatirntApplication {
     private ApptRepo repo;
 

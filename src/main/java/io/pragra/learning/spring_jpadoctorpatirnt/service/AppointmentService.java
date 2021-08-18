@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class AppointmentService {
@@ -60,9 +61,10 @@ public class AppointmentService {
         return repo.findAll();
     }
 
-    public List<Appointment> getAllForDoctorName(String name){
-       // return repo.findAllByDoctorName(name);
-        return null;
+    public List<Appointment> getAllForDoctorName(String doctorFirstname){
+      // return repo.findAll().stream().filter(a->a.getDoctorName().getFirstName().toUpperCase().matches(doctorFirstname.toUpperCase())).collect(Collectors.toList());
+         return repo.findAllByDoctorName(doctorFirstname.toUpperCase());// Aptrepo has a LIst from which we are calling the method
+       // return repo.findByNativeQuery(doctorFirstname.toUpperCase());
     }
 
 

@@ -7,8 +7,8 @@ spring:
     username: sa
     password:
   jpa:
-    hibernate:
-      ddl-auto: create
+#    hibernate:
+#      ddl-auto: create
   show-sql: true
 #  spring:
 #    jpa:

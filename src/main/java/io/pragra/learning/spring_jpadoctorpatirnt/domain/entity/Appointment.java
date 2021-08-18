@@ -33,7 +33,7 @@ public class Appointment  {
     //@JoinColumn(name = "visiting_patient")// this one joins the Id columgn to visiting patient and combines it
     //table columns were these :ID  	APPOINTMENT_DATE CREATE_DATE  STATUS UPDATE_DATE  DOCTOR_NAME_ID  VISITING_PATIENT
     private Patient patient;
-    //@Transient// means it should not be paet of the column
+    //@Transient// means it should not be part of the column
     private Instant appointmentDate;
     private Instant createDate ;
     private Instant updateDate ;
